@@ -86,7 +86,9 @@ Route::group(['namespace' => 'Frontend'], function() {
 Route::group(['prefix' => 'test','namespace' => 'Test'], function(){
 	Route::get('hoa-don-ban','TestController@index');
 });
-
+Route::group(['prefix' => 'tes1','namespace' => 'Test'], function(){
+	Route::get('hoa-don-ban','TestControlle1r@index');
+});
 
 include 'route_api.php';
 
